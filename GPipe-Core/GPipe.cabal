@@ -53,9 +53,10 @@ library
                     Graphics.GPipe.Internal.Format,
                     Graphics.GPipe.Internal.FragmentStream,
                     Graphics.GPipe.Internal.FrameBuffer,
+                    Graphics.GPipe.Internal.List,
+                    Graphics.GPipe.Internal.Orphans,
                     Graphics.GPipe.Internal.PrimitiveArray,
                     Graphics.GPipe.Internal.PrimitiveStream,
                     Graphics.GPipe.Internal.Shader,
                     Graphics.GPipe.Internal.Texture,
-                    Graphics.GPipe.Internal.Uniform,
-                    Graphics.GPipe.Internal.Orphans
+                    Graphics.GPipe.Internal.Uniform
