@@ -30,6 +30,7 @@ library
                     gl >= 0.8 && <= 0.9,
                     linear >= 1.18 && < 1.25
   exposed-modules:
+                    Data.Linear.Fields,
                     Graphics.GPipe,
                     Graphics.GPipe.Buffer,
                     Graphics.GPipe.Context,

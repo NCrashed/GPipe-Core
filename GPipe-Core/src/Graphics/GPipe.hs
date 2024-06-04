@@ -42,7 +42,8 @@ module Graphics.GPipe (
     module Graphics.GPipe.Sampler,
     module Graphics.GPipe.Orphans,    
     module Linear,
-    module Data.Boolean
+    module Data.Boolean,
+    module Data.Linear.Fields,
 )
 where
 
@@ -61,3 +62,4 @@ import Graphics.GPipe.Sampler
 import Graphics.GPipe.Orphans
 import Linear
 import Data.Boolean
+import Data.Linear.Fields
