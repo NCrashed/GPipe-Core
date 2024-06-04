@@ -44,5 +44,8 @@ instance HasField "y" (V4 a) a where
 instance HasField "z" (V3 a) a where 
     getField (V3 _ _ z) = z
 
+instance HasField "z" (V4 a) a where 
+    getField (V4 _ _ z _) = z
+
 instance HasField "w" (V4 a) a where 
     getField (V4 _ _ _ w) = w
