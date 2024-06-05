@@ -37,7 +37,7 @@ module Graphics.GPipe.Expr (
     ifThen,
     ifThenElse,
     ifThenElse',    
-    ShaderBase(),
+    ShaderBase(..),
     ShaderType(..)   
 )
 where
