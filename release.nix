@@ -10,7 +10,7 @@ let
 in project {
   inherit compiler;
   packages = {
-    GPipe-Core = ./GPipe-Core;
+    GPipe = ./GPipe-Core;
   };
   shellTools = pkgs: with pkgs.haskell.packages."${compiler}"; [
     cabal-install
