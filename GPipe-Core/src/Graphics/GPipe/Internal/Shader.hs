@@ -1,4 +1,4 @@
-{-# LANGUAGE MultiParamTypeClasses, TypeFamilies, FlexibleContexts,
+{-# LANGUAGE MultiParamTypeClasses, TypeOperators, TypeFamilies, FlexibleContexts,
   RankNTypes, ExistentialQuantification, GeneralizedNewtypeDeriving,
   FlexibleInstances, GADTs #-}
 

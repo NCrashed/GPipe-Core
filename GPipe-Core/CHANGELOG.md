@@ -1,3 +1,7 @@
+### 2.3.0
+
+- Support for GHC 9.10.1
+
 ### 2.2.5
 
 - Support for GHC 8.8.3

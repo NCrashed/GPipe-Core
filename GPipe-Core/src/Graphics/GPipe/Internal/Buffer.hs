@@ -1,5 +1,5 @@
 {-# LANGUAGE PatternSynonyms #-}
-{-# LANGUAGE Arrows, TypeFamilies, ScopedTypeVariables,
+{-# LANGUAGE Arrows, TypeOperators, TypeFamilies, ScopedTypeVariables,
   FlexibleContexts, FlexibleInstances , TypeSynonymInstances #-}
 
 module Graphics.GPipe.Internal.Buffer
@@ -351,7 +351,7 @@ writeBuffer buffer offset elems | offset < 0 || offset >= bufferLength buffer = 
     in liftNonWinContextAsyncIO $ do
         bname <- readIORef $ bufName buffer
         glBindBuffer GL_COPY_WRITE_BUFFER bname
-        ptr <- glMapBufferRange GL_COPY_WRITE_BUFFER off (fromIntegral $maxElems * elemSize) (GL_MAP_WRITE_BIT + GL_MAP_FLUSH_EXPLICIT_BIT)
+        ptr <- glMapBufferRange GL_COPY_WRITE_BUFFER off (fromIntegral $ maxElems * elemSize) (GL_MAP_WRITE_BIT + GL_MAP_FLUSH_EXPLICIT_BIT)
         end <- bufferWriteInternal buffer ptr (take maxElems elems)
         glFlushMappedBufferRange GL_COPY_WRITE_BUFFER off (fromIntegral $ end `minusPtr` ptr)
         void $ glUnmapBuffer GL_COPY_WRITE_BUFFER
